@@ -31244,7 +31244,7 @@ var githubExports = requireGithub();
 try {
   // `who-to-greet` input defined in action metadata file
   // const nameToGreet = core.getInput("who-to-greet");
-  const nameToGreet = process.env("INPUT_WHO-TO-GREET");
+  const nameToGreet = process.env.INPUT_WHO-TO-GREET;
   coreExports.info(`Hello ${nameToGreet}!`);
 
   // Get the current time and set it as an output variable
